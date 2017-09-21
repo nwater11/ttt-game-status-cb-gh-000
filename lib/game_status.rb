@@ -35,11 +35,8 @@ def won?(board)
 end
 
 def full?(board)
-  board.each do |index|
-    if index == " "
-      return false
-    else
-      return true
-    end
+  board.none? do |index|
+    if index == " " || index == nil
+    end  
   end
 end
