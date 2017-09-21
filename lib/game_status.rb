@@ -64,6 +64,6 @@ def winner(board)
      elsif board[index] == 'O'
        return 'O'
      end
+     return nil
    end
-   return nil
  end
