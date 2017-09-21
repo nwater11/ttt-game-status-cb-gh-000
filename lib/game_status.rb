@@ -58,5 +58,12 @@ end
 
 
 def winner(board)
+  
+   if board[index] == 'X'
+     return 'X'
+   elsif board[index] == 'O'
+     return 'O'
+   end
+
 
  end
