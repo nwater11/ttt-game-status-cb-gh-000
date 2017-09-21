@@ -58,7 +58,7 @@ end
 
 
 def winner(board)
- if won?(board)  
+ if won?(board)
   won?(board).each do |index|
    if board[index] == 'X'
      return 'X'
@@ -66,5 +66,5 @@ def winner(board)
      return 'O'
    end
   end
- end   
+ end
 end
