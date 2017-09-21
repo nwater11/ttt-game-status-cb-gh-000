@@ -36,6 +36,6 @@ end
 
 def full?(board)
   board.none? do |index|
-      position_taken?(board, index)? false : true
+      position_taken?(board, index)
   end
 end
