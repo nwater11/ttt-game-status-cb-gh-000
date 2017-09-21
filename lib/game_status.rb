@@ -34,6 +34,7 @@ def won?(board)
   return false
 end
 
+
 def full?(board)
   board.none? do |index|
     if index == " " || index == nil
@@ -46,4 +47,12 @@ def draw?(board)
     if !won?(board) && full?(board)
       return true
     end
+end
+
+
+def over?(board)
+  if won?(board) || draw?(board) || full?(board)
+    return ture
+  end  
+
 end
