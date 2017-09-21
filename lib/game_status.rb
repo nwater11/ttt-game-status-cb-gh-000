@@ -36,10 +36,10 @@ end
 
 def full?(board)
   board.each do |index|
-      if position_taken?(board, index)
-        return true
-      else
-        return false
-      end
+    if index == " "
+      return true
+    else
+      return false
+    end    
   end
 end
