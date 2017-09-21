@@ -53,6 +53,6 @@ end
 def over?(board)
   if won?(board) || draw?(board) || full?(board)
     return ture
-  end  
+  end
 
 end
